@@ -275,17 +275,6 @@ public class HomeActivity extends AppCompatActivity {
                 .setText(message)
                 .setBackgroundColor(Color.parseColor("#00B873"))
                 .setTextColor(Color.parseColor("#FFFFFF"))
-//                .setActionText("Retry!")
-//                .setActionTextColor(Color.parseColor("#00B873"))
-//                .setActionClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//
-//                        //firstLaunch();
-//
-//
-//                    }
-//                })
                 .setActionTextSize(20)
                 .setMaxLines(4)
                 .centerText()
