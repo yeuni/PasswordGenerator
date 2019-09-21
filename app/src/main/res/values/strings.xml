@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Password Generator</string>
+    <string name="lower_caseexample">(e.g. abcde)
+
+    </string>
+    <string name="eg_uppercase">(e.g. ABCDE)</string>
+</resources>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/ic_action_lock" />
+
+
+                <TextView
+                    android:fontFamily="@font/mavenprobold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1.6"
+                    android:gravity="center_horizontal"
+                    android:text="Secure Password Generator"
+                    android:textColor="#fff"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="16dp"
+                    android:layout_weight="0.2"
+                    android:gravity="right"
+                    android:src="@drawable/ic_action_moree" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:fontFamily="@font/mavenpromedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prevent your passwords from being hacked "
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                     />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                />
+
+                <TextView
+                    android:fontFamily="@font/mavenpromedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text=" and keep your online accounts safe"
+                    android:textColor="#fff"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary">
+
+            </View>
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:fontFamily="@font/mavenprobold"
+                android:text="Password Length :"
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary">
+
+            </View>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/mavenprobold"
+                android:text="Include Symbols:"
+                android:layout_weight="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+           <CheckBox
+               android:buttonTint="@color/colorPrimary"
+               android:fontFamily="@font/mavenpromedium"
+               android:id="@+id/symbols"
+               android:layout_weight="4"
+               android:hint="( e.g. @#$% )"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </CheckBox>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary">
+
+            </View>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/mavenprobold"
+                android:text="Include Numbers: "
+                android:layout_weight="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+           <CheckBox
+               android:buttonTint="@color/colorPrimary"
+               android:fontFamily="@font/mavenpromedium"
+               android:id="@+id/numbers"
+               android:layout_weight="4"
+               android:hint="( e.g. 123456 )"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </CheckBox>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary">
+
+            </View>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/mavenprobold"
+                android:text="Include Lowercase:"
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+           <CheckBox
+               android:buttonTint="@color/colorPrimary"
+               android:fontFamily="@font/mavenpromedium"
+               android:id="@+id/lowercase_letter"
+               android:layout_weight="6"
+               android:hint="@string/lower_caseexample"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </CheckBox>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="5dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp">
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary">
+
+            </View>
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="@font/mavenprobold"
+                android:text="Include Uppercase:"
+                android:layout_weight="6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+           <CheckBox
+               android:buttonTint="@color/colorPrimary"
+               android:fontFamily="@font/mavenpromedium"
+               android:id="@+id/capital_letter"
+               android:layout_weight="6"
+               android:hint="@string/eg_uppercase"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+           </CheckBox>
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:fontFamily="@font/mavenpromedium"
+                android:background="@drawable/qr_rect"
+                android:textColor="#009255"
+                android:id="@+id/passwordGenerate"
+                android:layout_weight="2"
+                android:text="Generate Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </Button>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal|center|center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:fontFamily="@font/mavenpromedium"
+                android:textColor="@color/colorPrimary"
+                android:text="Your New Password:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:gravity="center"
+                android:elevation="5dp"
+                android:background="@drawable/qr_mhu"
+                android:id="@+id/passwordDisplay"
+                android:fontFamily="@font/mavenprobold"
+                android:textColor="#F44336"
+                android:textColorHint="#9E9B9B"
+                android:hint="Your new password will appear here."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/linearCopy"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:textColor="#009255"
+            android:textSize="11sp"
+            android:layout_margin="15dp"
+            android:layout_weight="6"
+            android:background="@drawable/qr_rect"
+            android:text="Copy"
+            android:id="@+id/CopyPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+    <Button
+        android:textColor="#009255"
+        android:textSize="11sp"
+        android:layout_margin="15dp"
+        android:layout_weight="4"
+        android:id="@+id/passwordClear"
+        android:background="@drawable/qr_rect"
+        android:text="Clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

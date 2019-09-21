@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+android:layout_margin="10dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <CheckBox
+        android:hint="A"
+        android:id="@+id/capital_letter"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </CheckBox>
+    <CheckBox
+        android:hint="a"
+        android:id="@+id/lowercase_letter"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </CheckBox>
+    <CheckBox
+        android:hint="2"
+        android:id="@+id/numbers"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </CheckBox>
+    <CheckBox
+        android:hint="$"
+        android:id="@+id/symbols"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </CheckBox>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_margin="10dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <RadioGroup
+        android:id="@+id/passRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RadioButton
+        android:hint="4"
+        android:id="@+id/size_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RadioButton>
+    <RadioButton
+        android:hint="8"
+        android:id="@+id/size_eight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RadioButton>
+    <RadioButton
+        android:hint="12"
+        android:id="@+id/size_twelve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RadioButton>
+    <RadioButton
+        android:hint="16"
+        android:id="@+id/size_sixteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RadioButton>
+    </RadioGroup>
+  </LinearLayout>
+
+  <EditText
+      android:hint="Password hint"
+      android:id="@+id/passwordHint"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  </EditText>
+
+  <LinearLayout
+
+      android:layout_gravity="center"
+      android:layout_margin="10dp"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <Button
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:text="Generate"
+        android:id="@+id/passwordGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+    <Button
+        android:onClick="ClickedCLear"
+        android:layout_margin="4dp"
+        android:text="Clear"
+        android:id="@+id/passwordClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+  </LinearLayout>
+
+
+
+  <TextView
+      android:padding="12dp"
+      android:layout_margin="10dp"
+      android:id="@+id/passwordDisplay"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  </TextView>
+
+
+</LinearLayout>
